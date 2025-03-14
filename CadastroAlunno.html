@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Cadastro de Aluno</h2>
+    <form action="https://67d0b878825945773eb1bde0.mockapi.io/aluno" method="POST">
+        <h3>Dados do Aluno</h3>
+        <label>Nome*</label>
+        <input type="text" name="nome" required>
+
+        <label>Celular*</label>
+        <input type="text" name="celular" required>
+
+        <label>Email*</label>
+        <input type="email" name="email" required>
+
+        <label>Cor*</label>
+        <select name="cor" required>
+            <option value="">Selecione</option>
+            <option value="Branca">Branca</option>
+            <option value="Preta">Preta</option>
+            <option value="Parda">Parda</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Indígena">Indígena</option>
+        </select>
+
+        <h3>Dados do Pai</h3>
+        <label>Nome*</label>
+        <input type="text" name="pai_nome" required>
+
+        <label>Data de Nascimento</label>
+        <input type="date" name="pai_data_nascimento">
+
+        <label>Naturalidade</label>
+        <input type="text" name="pai_naturalidade">
+
+        <label>Instrução</label>
+        <input type="text" name="pai_instrucao">
+
+        <label>Profissão</label>
+        <input type="text" name="pai_profissao">
+
+        <label>Celular*</label>
+        <input type="text" name="pai_celular" required>
+
+        <label>Email*</label>
+        <input type="email" name="pai_email" required>
+
+        <label>CPF*</label>
+        <input type="text" name="pai_cpf" required>
+
+        <label>Responsável Financeiro?</label>
+        <select name="pai_responsavel">
+            <option value="Não">Não</option>
+            <option value="Sim">Sim</option>
+        </select>
+
+        <h3>Dados da Mãe</h3>
+        <label>Nome*</label>
+        <input type="text" name="mae_nome" required>
+
+        <label>Data de Nascimento</label>
+        <input type="date" name="mae_data_nascimento">
+
+        <label>Naturalidade</label>
+        <input type="text" name="mae_naturalidade">
+
+        <label>Instrução</label>
+        <input type="text" name="mae_instrucao">
+
+        <label>Profissão</label>
+        <input type="text" name="mae_profissao">
+
+        <label>Celular*</label>
+        <input type="text" name="mae_celular" required>
+
+        <label>Email*</label>
+        <input type="email" name="mae_email" required>
+
+        <label>CPF*</label>
+        <input type="text" name="mae_cpf" required>
+
+        <label>Responsável Financeiro?</label>
+        <select name="mae_responsavel">
+            <option value="Não">Não</option>
+            <option value="Sim">Sim</option>
+        </select>
+
+        <h3>Dados do Curso</h3>
+        <label>Nome do Curso*</label>
+        <input type="text" name="nomeCurso" required>
+
+        <label>Data de Ingresso*</label>
+        <input type="date" name="dataIngresso" required>
+
+        <label>Valor*</label>
+        <input type="number" name="valor" required>
+
+        <label>Forma de Pagamento (Parcelas)*</label>
+        <input type="number" name="formaPagamento" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+</html>
